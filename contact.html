@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Md. Miraz Hossain Shawon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle Dark Mode">🌓</button>
+
+    <header>
+        <h1>Contact Me</h1>
+        <p class="subtitle">Let's get in touch!</p>
+    </header>
+
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <a href="mailto:shawon.eduofficial@gmail.com">shawon.eduofficial@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📱</span>
+                            <a href="tel:+8801607336003">+880 1607-336003</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">💼</span>
+                            <a href="https://github.com/MirazShawon" target="_blank">GitHub Profile</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">🔗</span>
+                            <a href="https://www.linkedin.com/in/md-miraz-hossain-shawon-583ba6322/" target="_blank">LinkedIn Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="mailto:shawon.eduofficial@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Md. Miraz Hossain Shawon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
