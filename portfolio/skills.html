@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" class="dark-mode-toggle">🌓</button>
+
+    <header>
+        <h1>Technical Skills</h1>
+        <p class="subtitle">My Professional Expertise</p>
+    </header>
+
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="skills" class="section">
+            <h2>Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Bootstrap</li>
+                        <li>RESTful APIs</li>
+                        <li>Version Control (Git)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cybersecurity</h3>
+                    <ul>
+                        <li>Network Security</li>
+                        <li>Penetration Testing</li>
+                        <li>Security Protocols</li>
+                        <li>Risk Assessment</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Software</h3>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>GitHub</li>
+                        <li>Docker</li>
+                        <li>Linux/Unix</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Dark mode toggle functionality
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.documentElement;
+        
+        // Check for saved user preference, if any, on load of the website
+        const darkMode = localStorage.getItem('darkMode');
+        
+        if (darkMode === 'enabled') {
+            body.setAttribute('data-theme', 'dark');
+        }
+        
+        darkModeToggle.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                localStorage.setItem('darkMode', null);
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                localStorage.setItem('darkMode', 'enabled');
+            }
+        });
+    </script>
+</body>
+</html>
